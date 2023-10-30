@@ -2,6 +2,31 @@
 <search> 
   
   
+    
+    <entry>
+      <title>2023 ADL</title>
+      <link href="/2023/10/30/2023adl/"/>
+      <url>/2023/10/30/2023adl/</url>
+      
+        <content type="html"><![CDATA[<p>[toc]</p><h2 id="专题讲座1：基于大模型的代码生成：趋势和挑战"><a href="#专题讲座1：基于大模型的代码生成：趋势和挑战" class="headerlink" title="专题讲座1：基于大模型的代码生成：趋势和挑战"></a>专题讲座1：基于大模型的代码生成：趋势和挑战</h2><p>谢涛  北京大学讲席教授，计算机学院软件科学与工程系主任，高可信软件技术教育部重点实验室副主任</p><p><a href="https://ml4code.github.io/">ml4code</a> 一个记录机器学习在大代码上的研究应用的网站</p><p>软件解析学：分析软件系统质量、软件用户体验、软件开发过程生产力<br>MSR：Mining software repository</p><p>软件研发数据：</p><ul><li>开发：源代码、Bug历史、测试用例、检查历史、开发者在开发过程中的视觉跟踪、脑电波MRI/EMG</li><li>用户：使用日志、用户调研、在线论坛评论、blog &amp; twitter</li><li>系统：运行日志、系统事件等</li></ul><img src="/2023/10/30/2023adl/image.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-1.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-2.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-3.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-4.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-5.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-6.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-7.png" class="" title="Alt text"><h2 id="专题讲座2：大模型时代的软件研发：范式与工具"><a href="#专题讲座2：大模型时代的软件研发：范式与工具" class="headerlink" title="专题讲座2：大模型时代的软件研发：范式与工具"></a>专题讲座2：大模型时代的软件研发：范式与工具</h2><p>王千祥 华为公司PaaS技术创新实验室主任</p><p>AI编程的两个挑战：程序空间很大、用户意图不明</p><p>代码大模型演变</p><img src="/2023/10/30/2023adl/image-8.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-9.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-10.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-11.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-12.png" class="" title="Alt text"><img src="/2023/10/30/2023adl/image-13.png" class="" title="Alt text"><p>Hugging Face 大模型仓库</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Meetings </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ADL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>

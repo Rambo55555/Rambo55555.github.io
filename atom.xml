@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>This is the way</title>
+  
+  <subtitle>Nice day!</subtitle>
+  <link href="http://rambo55555.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://rambo55555.github.io/"/>
+  <updated>2023-10-30T11:08:00.372Z</updated>
+  <id>http://rambo55555.github.io/</id>
+  
+  <author>
+    <name>Rambo</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023 ADL</title>
+    <link href="http://rambo55555.github.io/2023/10/30/2023adl/"/>
+    <id>http://rambo55555.github.io/2023/10/30/2023adl/</id>
+    <published>2023-10-30T09:32:10.000Z</published>
+    <updated>2023-10-30T11:08:00.372Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&quot;专题讲座1：基于大模型的代码生成：趋势和挑战&quot;&gt;&lt;a href=&quot;#专题讲座1：基于大模型的代码生成：趋势和挑战&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Meetings" scheme="http://rambo55555.github.io/categories/Meetings/"/>
+    
+    
+    <category term="ADL" scheme="http://rambo55555.github.io/tags/ADL/"/>
+    
+  </entry>
+  
+</feed>
