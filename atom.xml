@@ -6,7 +6,7 @@
   <link href="http://rambo55555.github.io/atom.xml" rel="self"/>
   
   <link href="http://rambo55555.github.io/"/>
-  <updated>2023-10-30T11:08:00.372Z</updated>
+  <updated>2023-11-10T13:56:58.250Z</updated>
   <id>http://rambo55555.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>论文阅读笔记: What is Event Knowledge Graph: A Survey</title>
+    <link href="http://rambo55555.github.io/2023/11/10/lun-wen-yue-du-bi-ji-what-is-event-knowledge-graph-a-survey/"/>
+    <id>http://rambo55555.github.io/2023/11/10/lun-wen-yue-du-bi-ji-what-is-event-knowledge-graph-a-survey/</id>
+    <published>2023-11-10T13:53:24.000Z</published>
+    <updated>2023-11-10T13:56:58.250Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;KG&quot;&gt;&lt;a href=&quot;#KG&quot; class=&quot;headerlink&quot; title=&quot;KG&quot;&gt;&lt;/a&gt;KG&lt;/h1&gt;&lt;h2 id=&quot;知识表示&quot;&gt;&lt;a href=&quot;#知识表示&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="论文精读" scheme="http://rambo55555.github.io/categories/%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/"/>
+    
+    
+    <category term="论文精读, 事件知识图谱, EKG" scheme="http://rambo55555.github.io/tags/%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB-%E4%BA%8B%E4%BB%B6%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1-EKG/"/>
+    
+  </entry>
   
   <entry>
     <title>2023 ADL</title>
