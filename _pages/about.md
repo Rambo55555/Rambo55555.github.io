@@ -2,13 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research in computational modeling, epidemic dynamics, and data-driven forecasting.
+subtitle: PhD Candidate at Central South University · AI4SE
 
 profile:
   align: right
   image:
   image_circular: true
-  more_info:
+  more_info: >
+    <p>Central South University</p>
+    <p>Changsha, China</p>
 
 selected_papers: false
 social: true
@@ -20,8 +22,8 @@ latest_posts:
   enabled: false
 ---
 
-I work on computational modeling and data-driven forecasting, with projects involving epidemic dynamics, SIR-family models, and deep learning.
+I am **Peng Lan (兰鹏)**, also known as **Rambo**, a PhD candidate at **Central South University**.
 
-My public research code includes **TW-SIR**, a time-window based SIR approach for epidemic forecasting, and **SIRVD-DP**, a deep-learning prediction model based on a time-dependent SIRVD formulation.
+My research focuses on **AI4SE (Artificial Intelligence for Software Engineering)**. I am interested in applying modern AI techniques to software engineering problems and building intelligent methods and tools that improve software development and maintenance.
 
-This site is being rebuilt as an academic homepage. Add your full name, affiliation, short biography, research interests, and contact information here when ready.
+You can reach me at **rambohhh@csu.edu.cn**.
