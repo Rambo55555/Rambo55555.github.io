@@ -16,7 +16,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: AI4SE, AI for Software Engineering, software engineering, artificial intelligence, Central South University
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: https://rambo55555.github.io/wiki/images/favicon.png
+icon: favicon.png
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://rambo55555.github.io
