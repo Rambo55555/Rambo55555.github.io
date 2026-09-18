@@ -22,7 +22,7 @@ latest_posts:
   enabled: false
 ---
 
-I am **Peng Lan (兰鹏)**, also known as **Rambo**, a PhD candidate at **Central South University**.
+I am **Rambo (兰鹏)**, a PhD candidate at **Central South University**.
 
 My research focuses on **AI4SE (Artificial Intelligence for Software Engineering)**. I am interested in applying modern AI techniques to software engineering problems and building intelligent methods and tools that improve software development and maintenance.
 
