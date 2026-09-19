@@ -2,12 +2,12 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Candidate at Central South University · AI4SE
+subtitle: PhD Candidate at Central South University · AI for Software Engineering (AI4SE)
 
 profile:
   align: right
-  image:
-  image_circular: true
+  image: prof_pic.jpg
+  image_circular: false
   more_info: >
     <p>Central South University</p>
     <p>Changsha, China</p>
@@ -24,6 +24,8 @@ latest_posts:
 
 I am **Rambo (兰鹏)**, a PhD candidate at **Central South University**.
 
-My research focuses on **AI4SE (Artificial Intelligence for Software Engineering)**. I am interested in applying modern AI techniques to software engineering problems and building intelligent methods and tools that improve software development and maintenance.
+My research focuses on **AI for Software Engineering (AI4SE)**, particularly the application of large language models and learning-based methods to software development and maintenance.
+
+My recent work explores **code generation and refinement, program comprehension and summarization, commit message generation, and intelligent support for collaborative software development**.
 
 You can reach me at **rambohhh@csu.edu.cn**.
