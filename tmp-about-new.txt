@@ -1,0 +1,38 @@
+---
+layout: about
+title: About
+permalink: /
+subtitle: PhD Candidate at Central South University · AI for Software Engineering (AI4SE)
+
+profile:
+  align: right
+  image: profile-photo.jpg
+  image_circular: false
+  more_info: >
+    <p>Be the change you want to see in the world</p>
+
+selected_papers: true
+social: true
+
+announcements:
+  enabled: false
+
+latest_posts:
+  enabled: false
+---
+
+I am **Rambo (兰鹏)**, a PhD candidate at **Central South University**.
+
+My research focuses on **AI for Software Engineering (AI4SE)**, particularly the application of large language models and learning-based methods to software development and maintenance.
+
+My recent work explores **code generation and refinement, program comprehension and summarization, commit message generation, and intelligent support for collaborative software development**.
+
+## Research Interests
+
+- Large Language Models for Software Engineering
+- Code Generation, Refinement, and Security
+- Program Comprehension and Code Summarization
+- Commit Message and Pull Request Generation
+- Retrieval-Augmented Software Engineering
+
+You can reach me at **rambohhh@csu.edu.cn**.
