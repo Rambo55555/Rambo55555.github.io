@@ -39,6 +39,10 @@ jobs:
           export JEKYLL_ENV=production
           bundle exec jekyll build
 
+      - name: Keep public favicon URL
+        run: |
+          find _site -name '*.html' -type f -print0 | xargs -0 sed -E -i 's#href="/assets/img/favicon\.png\?v=[^"]+"#href="https://rambo55555.github.io/wiki/images/favicon.png"#g'
+
       - name: Deploy
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
