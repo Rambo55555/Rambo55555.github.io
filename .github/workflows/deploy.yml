@@ -39,6 +39,22 @@ jobs:
           export JEKYLL_ENV=production
           bundle exec jekyll build
 
+      - name: Normalize profile image markup
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          p = Path('_site/index.html')
+          s = p.read_text()
+          s = re.sub(
+              r'<picture>\s*<source class="responsive-img-srcset"[^>]*>\s*<img src="/assets/img/prof_pic\.jpg[^>]*>\s*</source></picture>',
+              '<img src="/assets/img/prof_pic.jpg?v=profile-20260919" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="Rambo profile photo" loading="eager">',
+              s,
+              count=1,
+          )
+          p.write_text(s)
+          PY
+
       - name: Keep public favicon URL
         run: |
           find _site -name '*.html' -type f -print0 | xargs -0 sed -E -i 's#href="/assets/img/favicon\.png\?v=[^"]+"#href="https://rambo55555.github.io/wiki/images/favicon.png"#g'
