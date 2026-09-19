@@ -48,7 +48,7 @@ jobs:
           s = p.read_text()
           s = re.sub(
               r'<picture>\s*<source class="responsive-img-srcset"[^>]*>\s*<img src="/assets/img/prof_pic\.jpg[^>]*>\s*</source></picture>',
-              '<img src="https://raw.githubusercontent.com/Rambo55555/Rambo55555.github.io/al-folio-redesign/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="Rambo profile photo" loading="eager" referrerpolicy="no-referrer">',
+              '<img src="/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="Rambo profile photo" loading="eager">',
               s,
               count=1,
           )
