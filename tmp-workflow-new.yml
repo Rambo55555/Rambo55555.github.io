@@ -1,0 +1,66 @@
+name: Deploy al-folio
+
+on:
+  push:
+    branches: [main, al-folio-redesign]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.5"
+          bundler-cache: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          pip install --upgrade nbconvert
+
+      - name: Build
+        run: |
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
+
+      - name: Normalize profile image markup
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          p = Path('_site/index.html')
+          s = p.read_text()
+          s = re.sub(
+              r'<picture>\s*<source class="responsive-img-srcset"[^>]*>\s*<img src="/assets/img/profile-photo\.jpg[^>]*>\s*</source></picture>',
+              '<img src="/assets/img/profile-photo.jpg?v=profile-20260919" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="Rambo profile photo" loading="eager">',
+              s,
+              count=1,
+          )
+          p.write_text(s)
+          PY
+
+      - name: Keep public favicon URL
+        run: |
+          find _site -name '*.html' -type f -print0 | xargs -0 sed -E -i 's#href="/assets/img/favicon\.png\?v=[^"]+"#href="https://rambo55555.github.io/wiki/images/favicon.png"#g'
+
+      - name: Deploy
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site
