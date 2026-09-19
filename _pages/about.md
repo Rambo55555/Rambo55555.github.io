@@ -9,8 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>Central South University</p>
-    <p>Changsha, China</p>
+    <p>Be the change you want to see in the world</p>
 
 selected_papers: true
 social: true
