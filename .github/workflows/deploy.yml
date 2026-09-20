@@ -39,28 +39,47 @@ jobs:
           export JEKYLL_ENV=production
           bundle exec jekyll build
 
-      - name: Normalize profile image markup
+      - name: Preserve static site marker
+        run: touch _site/.nojekyll
+
+      - name: Inline profile photo
         run: |
           python - <<'PY'
           import re
           from pathlib import Path
-          p = Path('_site/index.html')
-          s = p.read_text()
-          s = re.sub(
-              r'<picture>\s*<source class="responsive-img-srcset"[^>]*>\s*<img src="/assets/img/prof_pic\.jpg[^>]*>\s*</source></picture>',
-              '<img src="/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="Rambo profile photo" loading="eager">',
-              s,
-              count=1,
+
+          page = Path('_site/index.html')
+          html = page.read_text()
+          b64 = Path('assets/img/prof_pic_inline.b64').read_text().strip()
+          replacement = (
+              '<img src="data:image/jpeg;base64,' + b64 + '" '
+              'class="img-fluid z-depth-1 rounded" width="100%" height="auto" '
+              'alt="Rambo profile photo" loading="eager">'
           )
-          p.write_text(s)
+
+          html, count = re.subn(
+              r'<picture>.*?<img[^>]*src="/assets/img/prof_pic\.jpg[^>]*>.*?</picture>',
+              replacement,
+              html,
+              count=1,
+              flags=re.S,
+          )
+          if count == 0:
+              html, count = re.subn(
+                  r'<img[^>]*src="/assets/img/prof_pic\.jpg[^>]*>',
+                  replacement,
+                  html,
+                  count=1,
+              )
+          if count != 1:
+              raise SystemExit(f'Expected exactly one profile image replacement, got {count}')
+
+          page.write_text(html)
           PY
 
       - name: Keep public favicon URL
         run: |
           find _site -name '*.html' -type f -print0 | xargs -0 sed -E -i 's#href="/assets/img/favicon\.png\?v=[^"]+"#href="https://rambo55555.github.io/wiki/images/favicon.png"#g'
-
-      - name: Preserve static site marker
-        run: touch _site/.nojekyll
 
       - name: Deploy
         if: github.event_name != 'pull_request'
